@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #00aedb;
+}
+
+section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h4 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.Time span {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: "Russo One", sans-serif;
+}
+
+.start {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vh;
+  border-radius: 5%;
+  background-color: white;
+  box-shadow: 5px 5px gray;
+}
+
+.start h4 {
+  font-size: 20px;
+}
+
+.start input {
+  margin-bottom: 20px;
+  border-style: groove;
+  width: 150px;
+  height: 20px;
+}
+
+.startbtn {
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  margin-top: 100px;
+}
+
+.container {
+  margin-top: 20px;
+  width: 500px;
+  display: grid;
+  grid-template-rows: repeat(5, 100px);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+}
+
+.container input {
+  background-color: #fad06c;
+  font-size: x-large;
+  border-style: none;
+  font-family: "Jua", sans-serif;
+  font-weight: bold;
+  border-radius: 30%;
+}
+
+.container input:hover {
+  background-color: #00aedb;
+}
+
+.Time {
+  margin: 0;
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+}
+
+.sucess {
+  display: flex;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.push {
+  display: flex;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vh;
+  border-radius: 5%;
+  background-color: white;
+  box-shadow: 5px 5px gray;
+}
+
+.push span {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 50px;
+}
+
+button {
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  background-color: #00aedb;
+  border: 2px solid black;
+  box-shadow: 5px 5px gray;
+  font-size: x-large;
+  font-family: "Russo One", sans-serif;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#user_count {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 10px;
+}
