@@ -1,0 +1,69 @@
+  {
+    "cards": [
+        {
+          "img": "🌭",
+          "isOpen": "close"
+        },
+        {
+            "img": "🌭" ,
+            "isOpen": "close"
+        },
+        {
+            "img": "🍗" ,
+            "isOpen": "close"
+        },
+        {
+            "img": "🍗" ,
+            "isOpen": "close"
+        },
+        {
+            "img": "🍟" ,
+            "isOpen": "close"
+          },
+          {
+            "img": "🍟" ,
+            "isOpen": "close"
+          },
+          {
+            "img": "🍕" ,
+            "isOpen": "close"
+          },
+          {
+            "img": "🍕" ,
+            "isOpen": "close"
+          },
+          {
+            "img": "🍿" ,
+            "isOpen": "close"
+          },
+          {
+            "img": "🍿" ,
+            "isOpen": "close"
+          },
+          {
+            "img" : "🥨" ,
+            "isOpen": "close"
+          },
+          {
+            "img": "🥨" ,
+            "isOpen": "close"
+          },
+          {
+            "img": "🍩" ,
+            "isOpen": "close"
+          },
+          {
+            "img": "🍩" ,
+            "isOpen": "close"
+          },
+          {
+            "img": "🥞" ,
+            "isOpen": "close"
+          },
+          {
+            "img": "🥞" ,
+            "isOpen": "close"
+          }
+      ]
+    
+  } 

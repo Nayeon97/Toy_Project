@@ -1,19 +1,34 @@
-
-let container = document.querySelector(".container");
-
-class Cards {
-    constructor(card_front, card_back, isfront) {
-        this.card_front = card_front;
-        this.card_back = card_back;
-        this.isfront = isfront;
-    }
-
+function loadItems(){
+    return fetch('/data.json')
+    .then(response=>response.json())
+    .then(json=>json.cards);
 }
 
-let array = ['🍕','🍕','🍩','🍩','🌭','🌭','🍔','🍔','🍿','🍿','🥨','🥨','🍟','🍟','🍗','🍗'];
-let cards = [];
-function make(){
-    for(let i=0; i<16; i++){
-        
-    }
+loadItems() 
+.then(cards => {
+    displayCards(cards);
+    // setEventListeners(cards);
+})
+.catch(console.log)
+
+
+
+let board = document.querySelector(".card_board"); 
+
+function displayCards(cards) {
+    board.innerHTML = cards.map(card => Make_cardFront(card)).join('');
 }
+
+function Make_cardFront(card){
+ return `
+ <div class="card">
+ <div class="card_back"><span>🃏</span></div>
+ <div class="card_front">
+ <span>${card.img}</span>
+ </div>
+</div>
+ `;
+}
+
+
+
