@@ -1,0 +1,97 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(178, 216, 231);
+}
+
+button {
+  border: none;
+  border-radius: 100%;
+  background-color: white;
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 18px;
+}
+
+button:hover {
+  transform: scale(1.5);
+  background-color: thistle;
+}
+
+p {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.score {
+  margin: 0;
+  padding: 0;
+  height: 70px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 70px;
+}
+
+.score p {
+  font-size: 50px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 30%;
+}
+
+.user_com {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.item {
+  background-color: white;
+  width: 200px;
+  height: 150px;
+  margin-left: 10px;
+  border-radius: 100%;
+}
+
+.user_item {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.computer_item {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.buttom {
+  display: flex;
+  margin-top: 10px;
+  padding: 0;
+}
