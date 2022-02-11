@@ -7,7 +7,7 @@ let userSelect = [];
 let sucessCnt=0; //성공횟수
 
 function getJson(){
-    return fetch('/data.json')
+    return fetch('./data.json')
     .then(response=>response.json())
     .then(json=>json.cards);
 }
@@ -18,6 +18,7 @@ getJson()
     openArray(cards);
     displayCards(cards);
     setclickEvent();
+    reset();
 })
 .catch(console.log)
 
@@ -99,7 +100,6 @@ function setclickEvent() {
 }
 
 setclickEvent();
-
 
 
 

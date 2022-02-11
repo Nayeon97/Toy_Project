@@ -9,11 +9,15 @@ body {
   display: flex;
 }
 
+.mobile {
+  display: none;
+}
+
 .counter {
   margin: auto;
-  margin-top: 10px;
-  width: 350px;
-  height: 40px;
+  margin-top: 50px;
+  width: 650px;
+  height: 80px;
   font-size: 30px;
   border-radius: 5px;
   background-color: #fcc419;
@@ -21,10 +25,11 @@ body {
 
 .counter > span {
   margin-right: 10px;
+  font-size: 58px;
 }
 
 .card_board {
-  margin-top: 50px;
+  margin-top: 65px;
   position: absolute;
   left: 50%;
   top: 40%;
@@ -32,7 +37,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(4, 100px);
-  gap: 0.5px;
+  gap: 30px;
 }
 
 .card {
@@ -48,10 +53,11 @@ body {
 }
 
 .card_back {
-  font-size: 70px;
+  font-size: 100px;
   transform: rotateY(0deg);
   transform-style: preserve-3d;
-  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  transition: all 1s;
 }
 
 .card_back.turn {
@@ -60,17 +66,35 @@ body {
 
 .card_front {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  z-index: 2;
   transform-style: preserve-3d;
   transform: rotateY(-180deg);
-  transition: all 0.5s ease-in-out;
-  font-size: 70px;
+  transition: all 1s;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.card_back,
+.card_front > span {
+  font-size: 130px;
+}
 .card_front.turn {
   transform: rotateY(0deg);
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    background-color: white;
+  }
+  .card {
+    display: none;
+  }
+  .container {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }
