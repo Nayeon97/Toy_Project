@@ -5,9 +5,26 @@ body {
 }
 
 button {
-  width: 110px;
+  color: #868e96;
+  width: 90px;
   height: 70px;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #fff4e6;
+  border: none;
+  display: inline-block;
+  border-radius: 50px;
+  box-shadow: 3px 3px 0px 0px #ced4da;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #ffe8cc;
+}
+
+button:active {
+  box-shadow: 1px 1px 0 rgba(61, 59, 59, 0.5);
+  top: 3px;
 }
 
 .container {
@@ -22,18 +39,29 @@ button {
 .calculator {
   text-align: center;
   margin-top: 20px;
-  background-color: antiquewhite;
+  /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+  background-color: #a5d8ff;
   width: 500px;
   height: 600px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 0px 0px #e9ecef;
 }
 
-.calculator_display {
-  background-color: white;
-  height: 90px;
-  margin: 10px;
+#calculator_display {
+  background-color: #f8f0fc;
+  color: #495057;
+  height: 50px;
+  width: 430px;
+  margin-left: 30px;
   margin-top: 50px;
   margin-bottom: 20px;
   border-radius: 10px;
+  text-align: right;
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 20px;
+  overflow: hidden;
+  overflow-wrap: break-word;
 }
 
 .clear_end {
@@ -41,7 +69,7 @@ button {
 }
 
 .clear_end > button {
-  width: 225px;
+  width: 190px;
   height: 70px;
 }
 
@@ -49,6 +77,10 @@ button {
   margin-bottom: 10px;
 }
 
+.btn_row_end .num {
+  width: 200px;
+}
+
 #zero {
-  width: 223px;
+  width: 200px;
 }
