@@ -59,7 +59,6 @@ button:active {
   padding-top: 20px;
   padding-right: 10px;
   overflow: hidden;
-  overflow-wrap: break-word;
   position: relative;
 }
 
