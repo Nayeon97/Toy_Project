@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.card_container {
+  display: grid;
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.card {
+  background-color: yellow;
+  border-style: solid;
+  border-color: black;
+  width: 100px;
+  height: 100px;
+}
