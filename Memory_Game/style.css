@@ -18,11 +18,17 @@
 }
 
 .card {
-  background-color: yellow;
+  background-color: white;
   border-style: solid;
   border-color: black;
   width: 100px;
   height: 100px;
+}
+
+.card.select {
+  background-color: pink;
+  transform: scale(0.98);
+  transition-duration: 0.5s;
 }
 
 .start_container {
