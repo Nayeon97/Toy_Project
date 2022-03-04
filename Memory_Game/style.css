@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body.sucess {
+  background-color: pink;
+  transition-duration: 300ms;
+}
+
 .container {
   display: flex;
   justify-content: center;
